@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<title>Sport</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="user-scalable=no, width=device-width" />
+		<link rel="stylesheet" href="stylesheets/screen.css" media="screen, projection" type="text/css">
+		<link rel="stylesheet" href="stylesheets/print.css" media="print" type="text/css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="stylesheets/styles.css" type="text/css">
+		<link rel="stylesheet" href="stylesheets/style.css" type="text/css">
+		<!--[if IE]>
+			<link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css">
+		<![endif]-->
+	</head>
+	<body>
+		<div class="container-fluid">
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul id="menu" class="nav navbar-nav row">
+							<li class="col-md-3"><a href="#">Vélo</a></li>
+							<li class="col-md-3"><a href="#">Randonnée</a></li>
+							<li class="col-md-3"><a href="#">Kayak</a></li>
+							<li class="col-md-3"><a href="#">Running</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<div id="slider">
+				<div id="moveLeft"></div>
+				<div id="moveRight"></div>
+				<div class="slide left" style="background:url('img/mountain-bike-16.jpg'); background-size: cover; background-position: center">
+					<div class="slide-content">
+						<h2>Randonnée</h2>
+						<button>EN SAVOIR PLUS</button>
+					</div>
+				</div>
+				<div class="slide current" style="background:url('img/maxresdefault.jpg'); background-size: cover; background-position: center">
+					<div class="slide-content">
+						<h2>Slopestyle</h2>
+						<button>EN SAVOIR PLUS</button>
+					</div>
+				</div>
+				<div class="slide right" style="background:url('img/st2.jpg'); background-size: cover; background-position: center">
+					<div class="slide-content">
+						<h2>Freeride</h2>
+						<button>EN SAVOIR PLUS</button>
+					</div>
+				</div>
+				<div class="slide" style="background:url('img/trial.jpg'); background-size: cover; background-position: center">
+					<div class="slide-content">
+						<h2>Descente</h2>
+						<button>EN SAVOIR PLUS</button>
+					</div>
+				</div>
+				<img id="down" class="pulse" src="img/down-arrow.svg" alt="" />
+			</div>
+			
+			<div class="row">
+				<div class="col-md-6 article">
+					<img src="img/velo.jpg" class="img-responsive" alt="Vélo" />
+					<a class="article_link" href="#">VTT</a>
+				</div>
+				<div class="col-md-6 article">
+					<img src="img/randonnee.jpg" class="img-responsive" alt="Randonnée">
+					<a class="article_link" href="#">Randonnée</a>
+				</div>
+			</div>
+			<div class="row">
+				<div id="mountain" class="col-md-12">
+					<div class="img background" style="background:url('img/background.png'); background-size: cover; background-position: center"></div>
+					<div class="img middle" style="background:url('img/middle2.png'); background-size: cover; background-position: center"></div>
+					<div class="img foreground" style="background:url('img/foreground.png'); background-size: cover; background-position: center"></div>
+<!-- 					<img class="img-responsive background" src="img/background.png" alt="" />
+					<img class="img-responsive middle" src="img/middle2.png" alt="" />
+					<img class="img-responsive foreground" src="img/foreground.png" alt="" /> -->
+					<div class="mountain_content">
+						<h4>Lorem ipsum dolor sit amet, <br />consectetur adipisicing elit. ?</h4>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 article">
+					<img class="img-responsive" src="img/kayak.jpg" alt="Kayak">
+					<a class="article_link" href="#">Kayak</a>
+				</div>
+				<div class="col-md-6 article">
+					<img class="img-responsive" src="img/running.jpg" alt="Running">
+					<div class="div_link">
+						<a class="article_link" href="#">Running</a>
+					</div>
+
+				</div>
+			</div>
+
+			<footer class="row">
+				<div class="col-md-6">
+					<ul id="footer-nav">
+						<li><a href="#">Qui sommes-nous ?</a></li>
+						<li><a href="#">Trouver un revendeur</a></li>
+						<li><a href="#">Politique de confidentialité</a></li>
+						<li><a href="#">Mentions légales</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+				<div class="col-md-6">
+					<ul id="social">
+						<li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
+						<li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
+						<li><a href=""><i class="fa fa-instagram fa-lg"></i></a></li>
+						<li><a href=""><i class="fa fa-youtube fa-lg"></i></a></li>
+					</ul>
+				</div>
+			</footer>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/mountain.js"></script>
+		<script src="js/slider.js"></script>
+		<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	</body>
+</html>

@@ -1,0 +1,308 @@
+body{
+    background-color: #51CFE4;
+    transition: all 1.5s ease-out;
+}
+
+section{
+    overflow: hidden;
+}
+
+.bgscale{
+    position: absolute;
+    width: 100vw;
+    height:100vh;
+    z-index:-1;
+}
+
+.smartphone{
+    width: 337px;
+}
+
+.posSmartphone{
+    position: absolute;
+    top:  20%;
+    left:  32%;
+    z-index: 0;
+}
+
+@media screen and (min-width: 200px) and (max-width: 640px) {
+    .posSmartphone{
+        position: absolute;
+        top:  45%;
+        left:  15%;
+    }
+
+    .smartphone{
+        width: 318px /*337*/;
+    }
+
+    .shine{
+        width: 222px !important;
+    }
+
+    .system-Overlay{
+        width: 222px !important;
+    }
+
+    .posScreen{
+        width: 222px !important;
+        height: 391px !important;
+        top: 50px !important;
+    }
+
+    .currentScreen{
+        width: 222px !important;
+    }
+
+    .hiddenScreenTop{
+        width: 222px !important;
+    }
+
+    .hiddenScreenBottom{
+        width: 222px !important;
+    }
+
+}
+
+.shine{
+    width: 235px;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    z-index: 100;
+}
+
+.system-Overlay{
+    width: 235px;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    z-index: 99;
+}
+
+.screen{
+    z-index: 10 !important;
+    transition: all .9s ease;
+}
+
+
+.footer {
+    position: fixed !important;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 40px;
+    z-index: 9999999;
+    background-color: rgba(0,0,0,0);
+}
+
+
+@media screen and (min-width: 200px) and (max-width: 640px) {
+    .footer {
+        background-color: white;
+    }
+    .contentFooter >li>a{
+        font-size: 10px !important;
+        line-height: 10px !important;
+        color: black !important;
+    }
+}
+
+.contentFooter{
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    float: right;
+    margin: 0;
+}
+
+.contentFooter >li{
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.contentFooter >li>a{
+    font-size: 11px;
+    line-height: 20px;
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-align: center;
+}
+
+.navbar-nav {
+    min-width: 100%;
+}
+
+.navbar-nav>li {
+    min-width: 25%;
+}
+
+.navbar-nav>li>a {
+    text-align: center;
+}
+
+.posScreen{
+    display: block;
+    position: absolute;
+    top: 52px;
+    left: 11px;
+    width: 235px;
+    height: 419px;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.currentScreen{
+    width: 235pxpx;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    z-index: 100;
+}
+
+.hiddenScreenTop{
+    width: 235pxpx;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    height: 100%;
+    z-index: 100;
+}
+
+.hiddenScreenBottom{
+    width: 235pxpx;
+    position: absolute;
+    top: -100%;
+    right: 0;
+    left: 0;
+    height: 100%;
+    z-index: 100;
+}
+
+.lesScreen{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.currentBg{
+    opacity: 1;
+    top:0;
+    position: absolute;
+    height: 115%;
+    z-index: 0;
+    width: 110%;
+}
+
+.hiddenBgTop{
+    position: absolute;
+    top: 110%;
+    right: 0;
+    left: 0;
+    height: 115%;
+    z-index: 0;
+    width: 110%;
+}
+
+.hiddenBgBottom{
+    position: absolute;
+    top: -110%;
+    right: 0;
+    left: 0;
+    height: 115%;
+    z-index: 0;
+    width: 110%;
+}
+
+.posBg{
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 113%;
+    z-index: -1;
+    overflow: hidden;
+    width: 100%;
+}
+
+.bg{
+    transition: all .7s ease-out;
+}
+
+.bgScale{
+    width: 100vw;
+    height: 100vh;
+}
+
+.posTextes{
+    display: block;
+    position: absolute;
+    top: 37%;
+    left: 53%;
+    width: 30%;
+    height: 25%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.texte{
+    color: white;
+    transition: all 1.1s ease;
+}
+
+.hiddenTexteTop{
+    opacity: 0;
+    position: absolute;
+    top: 110%;
+    right: 0;
+    left: 0;
+    height: 100%;
+    z-index: 100;
+}
+
+.hiddenTexteBottom{
+    opacity: 0;
+    position: absolute;
+    top: -110%;
+    right: 0;
+    left: 0;
+    height: 100%;
+    z-index: 100;
+}
+
+.currentTexte{
+    opacity: 1;
+    top:0;
+    position: absolute;
+    height: 100%;
+    z-index: 0;
+}
+
+
+@media screen and (min-width: 200px) and (max-width: 640px) {
+    .posTextes{
+        top: 7%;
+        left: 15%;
+        width: 65%;
+        height: 35%;
+    }
+
+    .posBg{
+        display: none;
+    }
+}
